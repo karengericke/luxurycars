@@ -9,8 +9,7 @@ class marcasvehiculo(models.Model):
     pais_fabricacion=models.CharField(max_length=25)
     
     def __str__(self):
-        texto= "{0}({1})"
-        return texto.format(self.marca, self.serie)
+        return f"marca: {self.marca} - serie: {self.serie}"
 
 class vendedore(models.Model):
     nombre_vendedor=models.CharField(max_length=35)
